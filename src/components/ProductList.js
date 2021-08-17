@@ -19,11 +19,10 @@ const ProductList = () => {
 
     useEffect(() => {
         getProducts();
-    })
+    },[])
 
     return (
         <div className="w-8/12 mx-auto">
-            Product List
             <ProductItem />
         </div>
     )
