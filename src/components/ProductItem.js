@@ -10,7 +10,7 @@ const ProductItem = () => {
         return(
             <div key={id} className="rounded border-2 border-gray-200 p-4">
                 <Link to={`product/${id}`}>
-                    <img src={thumbnail.lqip} alt={title} className="w-full h-64 object-cover mb-4"/>
+                    {thumbnail && <img src={thumbnail.lqip} alt={title} className="w-full h-64 object-cover mb-4"/>}
                     <p className="text-xl">{title}</p>
                     <p className="text-gray-600">Place of origin - {place_of_origin}</p> 
                 </Link>            

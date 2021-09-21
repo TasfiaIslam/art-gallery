@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  .hero-image {
+    transform: rotate3d(0, 1, 0.5, 3.142rad);
+  }
+}
