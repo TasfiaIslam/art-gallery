@@ -3,7 +3,21 @@
 @tailwind utilities;
 
 @layer base {
-  /* .hero-image {
-    transform: rotate3d(0, 1, 0.5, 3.142rad);
-  } */
+  .header-link-item {
+    @apply relative;
+  }
+  .header-link-item:hover {
+    @apply text-primary;
+  }
+  .header-link-item::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    border: solid 2px #fff;
+    z-index: -1;
+  }
+  .header-link-item:hover::after {
+    @apply animate-leftToRight border-b border-primary;
+  }
 }
